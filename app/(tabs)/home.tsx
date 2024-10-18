@@ -174,6 +174,8 @@ const home = () => {
 
   const handleLogout = async(e) => {
     e.preventDefault()
+    console.log("")
+
     try {
       await auth.signOut();
       router.replace('/');
